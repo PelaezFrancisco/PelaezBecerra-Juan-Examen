@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>PaginaPrincipalTickets</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="Principal Tickets" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="buscar.js" type="text/javascript" ></script>
+<!--    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">-->
+</head>
+<body> 
+    <header >
+            <div>
+                <img src="imagenes/logo.png"  alt="Imagen de Portada" class="logo">
+            </div>
+    </header>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="Pelicula1/PiedraF.html" target="_blank">Agregar Persona</a></li>
+                <li><a href="Pelicula2/CamaraS.html" target="_blank">Ingreso de Vehicul</a></li>
+                <li><a href="Pelicula3/PrisioneroA.html" target="_blank">El prisionero de Askaban</a></li>
+                <li><a href="Pelicula4/CalizF.html" target="_blank">El c&aacute;liz de fuego</a></li>
+                <li><a href="Pelicula5/OrdenF.html" target="_blank">La Orden del F&eacute;nix</a></li>
+                <li><a href="Pelicula6/MisterioP.html" target="_blank">El misterio del pr&iacute;ncipe</a></li>
+                <li><a href="Pelicula7/Reliquias1.html" target="_blank">Reliquias de la Muerte P1</a></li>
+                <li><a href="Pelicula8/Reliquias2.html" target="_blank">Reliquias de la Muerte P2</a></li>
+            </ul>
+        </nav>
+
+        <div class="art1">
+            <div class="img1">
+                <img src="imagenes/portada.jpg" id="img2" width="400" height="350">
+            </div>
+    
+            <div class="secc">
+                <div class="secc1">
+                    <h1>Agenda Telefonica</h1>
+                    <article>
+                    <br>
+                    <p>Los directorios telefónicos eran, originalmente, libros o revistas 
+                        brindados por las empresas telefónicas, ayuntamientos, etc.
+                        En los cuales figuran los números de los abonados en un área geográfica determinada. 
+                        <br><br>
+                        Disponen a su vez, de teléfonos de interés público, como policía, bomberos, 
+                        hospitales, protección civil, atención al drogodependiente, etc. Actualmente, 
+                        se distribuyen también en formato electrónico e Internet.
+                        Las guías contienen por orden alfabético, los nombres, la dirección postal y el 
+                        teléfono de aquellos abonados a líneas de teléfono que autorizan ser publicados 
+                        en la guía. En España se las conocía como Páginas Blancas, aunque actualmente existen 
+                        diferentes servicios que ofrecen la misma función
+                    </p>
+                    </article>
+                </div>
+                
+            </div>
+        </div>
+       
+        
+        
+        <section class="secc2"> <hr>
+            <div class="secc21">
+                <h2>Buscar Contacto</h2>
+                <form method="POST" onsubmit="return buscarPorCedula()" >
+                    <div class="secc211">
+                        <label>Buscar por:  </label> &nbsp; &nbsp; 
+                        <input type="radio" name="busqueda" value="h">&nbsp; &nbsp; <label> Cedula </label> &nbsp; &nbsp;
+                        <input type="radio" name="busqueda" value="m"> &nbsp;&nbsp; <label>Correo Electronico </label>  &nbsp; &nbsp; 
+                    </div>
+                    <br><br>
+                    <div class="secc212">
+                        <input type="text" id="cedula" name="cedula" value=""> <br>
+                        <input type="button" id="busc" name="buscar" value="Buscar" onclick="buscarPorCedula()" />
+                    </div>
+                    
+                    <br><br>
+                </form>
+            </div>
+        </section>
+
+        <section class="secc3">
+            <hr>
+            <div class="secc31">
+                <article class="articulos">
+                    <h3>Paginas Amarillas</h3>
+                    <p>En muchos países las páginas amarillas se refieren a una guía telefónica 
+                        para empresas organizadas según el tipo de producto o servicio. 
+                        <br>
+                        Tal y como el nombre sugiere, en la mayoría de los casos la apariencia 
+                        es la de un libro grueso cuyas páginas contienen fondo amarillo. 
+                        Las Páginas Amarillas también pueden consistir en una base de datos de 
+                        información electrónica que contiene el nombre de empresas.
+                        <br>
+                        Las páginas amarillas se suelen publicar en varios tomos de papel 
+                        (depende de la población de la zona) cada año y se distribuye gratuitamente
+                        en todas las residencias y lugares de negocios de una cierta área (generalmente 
+                        una ciudad o comarca). La mayoría de los listados se presentan en letra pequeña 
+                        de color negro y tienen mucha publicidad.
+                        <br>
+                        Los editores de las páginas amarillas negocian los valores añadidos que 
+                        proporcionan tales como el empleo de una fuente de texto mayor para resaltar el 
+                        contenido, o mediante el empleo de reclamos publicitarios en los listados por 
+                        categoría. Desde mediados de los años 1990, con la introducción de la impresión a 
+                        cuatro colores, los anuncios publicitarios se empezaron a realizar en color.
+                        Actualmente, las páginas amarillas se publican de forma digital en internet 
+                    </p>
+                    <div>
+                        <img src="imagenes/pagA.png" width="300" height="300">
+                    </div>
+                </article>
+            </div>
+            
+            <div class="secc32">
+                <article class="articulos">
+                    <h3>Paginas Blancas</h3>
+                    <p>En muchos países, las páginas blancas se refieren a una guía telefónica que incluye 
+                        por orden alfabético a todos los abonados, incluyendo empresas y particulares con 
+                        una o varias líneas telefónicas. Dependiendo de la densidad de población, las 
+                        ciudades más grandes suelen imprimir más de un tomo para el listado.<br>
+                        Las Páginas Blancas también pueden consistir en una base de datos de información 
+                        electrónica que contiene el nombre de sus usuarios y sus direcciones electrónicas 
+                        asociadas, de la misma forma que un directorio telefónico.<br> La Páginas blancas 
+                        electrónicas normalmente contienen información adicional, como la localización de 
+                        la oficina, número de teléfono, y correo electrónico, y sus contenidos están 
+                        determinados por un esquema de páginas bla UIncas.
+                    </p>
+                    <div>
+                        <img src="imagenes/pagB.jpg" width="300" height="300">
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+        
+
+        <div class="secc4">
+            <section class="secc41">
+               
+                <h2>Colaboradores</h2>
+                <div id="caja1">
+                    <br>
+                    <img class="img" id="img1" src="imagenes/colab1.png" width="200" height="200">
+                    <br><br>
+                    <p class="botones"> <strong>Juan Francisco Peláez Becerra</strong> </p> 
+                </div>
+    
+                <div id="caja2">
+                    <img class="img" id="img1" src="imagenes/colab2.jpg" width="200" height="210">
+                    <br><br>
+                    <p class="botones"> <strong>Diana Fernanda Tixi Uyaguari</strong> </p> 
+                </div> 
+            </section>
+    
+        </div>
+        
+        <footer>
+            <div class="secc5">
+                <div class="footer1">
+                    <div id="caja3">
+                        <a href="https://www.wizardingworld.com/"><img src="imagenes/face.jpg"  width="50" height="50" alt="Imagen de Portada" ></a>
+                    </div>
+                    <div id="caja4">        
+                        <a href="https://www.instagram.com/harrypotterfilm/"><img src="imagenes/insta.jpg"  width="50" height="50" alt="Imagen de Portada" ></a>
+                    </div>
+                    <div class="footer2">
+                        <img src="imagenes/logo.png"  width="260" height="100" alt="Imagen de Portada">
+                    </div>
+                </div>
+    
+                <div class="secc51">
+                    <div class="info1">
+                        <h3>Informaci&oacute;n</h3>
+                        <p>&#8226; Nombre: Diana Fernanda Tixi Uyaguari </p><br>
+                        <p>&#8226; Universidad Polit&eacute;cnica Salesiana </p><br>
+                        <p>&#8226; Email: <a href="mailto:dtixi@est.ups.edu.ec">dtixi@est.ups.edu.ec</a></p><br>
+                        <p>&#8226; Call: <a href="tel:+5930998801982">(593) 0998801982</a></p><br>
+                        <p>&#169;Todos los derechos reservados</p>
+                    </div>
+        
+                    <div class="info2">
+                        <h3>Informaci&oacute;n</h3>
+                        <p>&#8226; Nombre: Juan Francisco Pelaez Becerra </p><br>
+                        <p>&#8226; Universidad Polit&eacute;cnica Salesiana </p><br>
+                        <p>&#8226; Email: <a href="mailto:jpelaezb1@est.ups.edu.ec">jpelaezb1@est.ups.edu.ec</a></p><br>
+                        <p>&#8226; Call: <a href="tel:+593939082637">(593) 0939082637</a></p><br>
+                        <p>&#169;Todos los derechos reservados</p>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+    </body>
+</html>
