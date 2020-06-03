@@ -9,7 +9,7 @@ function validacion()
     for(var i = 0; i < document.forms[0].elements.length; i++){
         var elemento = document.forms[0].elements[i];
         //CamposVacios
-        if(elemento.value == '' && (elemento.type == 'text' || elemento.type == 'password')){    
+        if(elemento.value == '' && (elemento.type == 'text')){    
             if(elemento.id == 'cedula'){  
                 document.getElementById('mensaje1').innerHTML = 'Campo Cedula esta vacio'; 
                 elemento.style.border = '2px red solid';
@@ -187,5 +187,10 @@ function validarTelefono(elemento)
     }else{
         elemento.value = elemento.value.substring(0, elemento.value.length-1)
         return false;
+    }
+}
+function validarExistencia(elemento) {
+    if (elemento.value.length > 0) {
+        elemento.style.border = '2px greenyellow solid';
     }
 }
